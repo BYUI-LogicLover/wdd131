@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #386FA4;
+    --secondary-color: #59A5D8;
+    --accent1-color: #84D2F6;
+    --accent2-color: #91E5F6;
+    --heading-text-color: white;
+    --heading-font: Roboto, Helvetica, sans-serif;
+    --text-font: Montserrat, Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', 'Roboto', sans-serif; }
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font), serif;
+    padding: var(--padding);
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font), serif;
+    font-weight: bold;
+    text-decoration-color: black;
+    text-align: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font), serif;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
