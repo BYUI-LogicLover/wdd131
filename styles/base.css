@@ -84,18 +84,6 @@ nav a {
     border-radius: 4px;
 }
 
-.flag {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.flag p {
-    font-style: italic;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-/* About Me specific styles */
 .card h3 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 0.5rem;
@@ -157,33 +145,55 @@ footer {
 
 .welcome-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .welcome-text {
+    text-align: left;
     flex: 1;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .profile-image {
-    float: right;
     margin-right: 10px;
+    align-self: flex-start;
+    height: auto;
+    max-width: 200px;
 }
 
 .flag-image {
-    float: left;
-    margin-right: 10px;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    width: 200px;
-    height: auto;
-    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    display: block;
+}
+
+.flag-text {
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-align: left;
 }
 
 .container {
     display: flex;
+}
+
+.flag-container {
+    text-align: left;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.flag-caption {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .about-me {
