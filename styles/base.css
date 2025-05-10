@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #386FA4;
-    --secondary-color: #59A5D8;
-    --accent1-color: #84D2F6;
-    --accent2-color: #91E5F6;
+    --primary-color: #423629;
+    --secondary-color: #4F5D2F;
+    --accent1-color: #7D7E75;
+    --accent2-color: #B0B2B8;
     --heading-text-color: white;
     --heading-font: Roboto, Helvetica, sans-serif;
     --text-font: Montserrat, Helvetica, sans-serif;
@@ -45,6 +45,12 @@ nav {
 nav a {
     color: white;
     padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
 }
 
 .card {
