@@ -22,28 +22,12 @@ body {
     align-content: center;
 }
 
-#page-header {
-    background-color: var(--primary-color);
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-family: var(--heading-font), serif;
-}
-
-#page-header img {
-    border-radius: 15%;
-    width: 150px;
-    height: 150px;
-    border: var(--border);
-}
-
-#page-header h1 {
-    font-family: var(--text-font), serif;
-    font-size: 3rem;
-    color: var(--heading-text-color);
-    margin-left: 20px;
-    margin-top: 20px;
+    background-color: var(--primary-color);
+    padding: var(--padding);
 }
 
 h1,
@@ -55,9 +39,13 @@ h6 {
     font-family: "Montserrat", "Roboto", sans-serif;
 }
 
-h2 {
-    background-color: var(--primary-color);
+h1 {
     color: var(--heading-text-color);
+    margin: 0
+}
+
+h2 {
+    color: var(--secondary-color);
     font-family: var(--heading-font), serif;
     padding: var(--padding);
     margin: 0;
@@ -77,31 +65,33 @@ h2 {
     display: none;
 }
 
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
 .navigation ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
-    justify-content: space-evenly;
-    background: var(--secondary-color);
+    margin: 0;
+    padding: 0;
 }
 
-.navigation ul li {
-    flex: 1 1 auto;
+nav a {
+    font-size: 1.5rem;
     font-family: var(--heading-font), serif;
-    font-size: 1.2rem;
-}
-
-.navigation ul li a {
-    display: block;
-    color: var(--heading-text-color);
-    padding: 0.75rem;
+    color: white;
     text-decoration: none;
-    text-align: center;
-}
-
-nav ul li a:hover {
-    background: var(--accent1-color);
-    color: black;
+    margin: 0 10px;
 }
 
 footer {
@@ -127,30 +117,6 @@ main {
     padding: 20px;
 }
 
-main h1 {
-    text-align: left;
-    margin-bottom: 1rem;
-    width: 100%;
-    font-family: var(--heading-font), serif;
-    color: black;
-    font-size: 2.5rem;
-}
-
-.stdlf {
-    font-weight: 700;
-    border-bottom: 1px solid #777;
-    margin-bottom: 1rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    padding: 1rem;
-    background-color: #333;
-    text-align: center;
-    font-family: "Acme", Arial, sans-serif;
-    color: #fff;
-}
-
 h3 {
     font-size: 1.5rem;
     color: darkgreen;
@@ -174,7 +140,7 @@ figure {
 }
 
 img {
-    width: 100%;
+    width: 250px;
     height: auto;
     margin: 0.5rem;
 }
@@ -183,7 +149,34 @@ figcaption {
     font-size: smaller;
 }
 
+.temple-images {
+    width: 100%;
+    padding: 1rem;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 767px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .trigram {
         background: none;
         border: none;
@@ -211,13 +204,15 @@ figcaption {
     nav {
         visibility: hidden;
         display: none;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .navigation ul {
         flex-direction: column;
         justify-content: left;
         width: 100%;
-        background: var(--secondary-color);
+        background: var(--primary-color);
     }
 
     .navigation ul li a {

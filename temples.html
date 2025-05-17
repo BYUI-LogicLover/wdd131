@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Travis Nelson" />
-    <meta
-      name="description"
-      content="WDD 131 - Dynamic Web Fundamentals | Travis Nelson | Temples"
-    />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Travis Nelson"/>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Travis Nelson | Temples"/>
     <title>WDD 131 - Dynamic Web Fundamentals - Travis Nelson</title>
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
     />
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/temples.js" defer></script>
-    <link rel="stylesheet" href="styles/temples.css" />
-    <link rel="stylesheet" href="styles/temples-large.css" />
-    <link rel="icon" href="images/favicon.png" type="image/png" />
-  </head>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css"/>
+    <link rel="stylesheet" href="styles/temples-large.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png"/>
+</head>
 
-  <body>
-    <header>
-      <h1>Temple Album</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Old</a>
-        <a href="#">New</a>
-        <a href="#">Large</a>
-        <a href="#">Small</a>
-      </nav>
-      <div class="trigram">☰</div>
-      <div class="cross">╳</div>
-    </header>
-    <main>
-      <h2>Home</h2>
-      <section>
-        <div class="container stdlf">
-          <figure>
-            <img
-              class="hover"
-              src="images/saratoga-springs-utah-temple.jpg"
-              loading="lazy"
-              width="250"
-              height="167"
-              alt="Saratoga Springs Utah"
-            />
-            <figcaption>Saratoga Springs Utah</figcaption>
-          </figure>
-      </section>
-      <section>
-        <div class="container stdlf">
-          <figure>
-            <img
-              class="hover"
-              src="images/saratoga-springs-utah-temple.jpg"
-              loading="lazy"
-              width="250"
-              height="167"
-              alt="Saratoga Springs Utah"
-            />
-            <figcaption>Saratoga Springs Utah</figcaption>
-          </figure>
-      </section>
-    </main>
-    <footer>
-      <p>
+<body>
+<header>
+    <h1>Temple Album</h1>
+    <nav class="navigation">
+        <ul id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+    </nav>
+    <div class="trigram">☰</div>
+    <div class="cross">╳</div>
+</header>
+<main>
+    <h2>Home</h2>
+    <section class="temple-images">
+        <div class="image-container">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+            <img src="images/saratoga-springs-utah-temple.jpg" alt="Saratoga Springs Utah Temple">
+        </div>
+    </section>
+</main>
+<footer>
+    <p>
         &copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah
-      </p>
-      <p>Last modified: <span id="lastModified"></span></p>
-    </footer>
-  </body>
+    </p>
+    <p>Last modified: <span id="lastModified"></span></p>
+</footer>
+</body>
 </html>
