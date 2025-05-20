@@ -48,4 +48,13 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    nav ul li a:hover {
+        background: var(--accent1-color);
+        color: black;
+    }
+
+    nav ul li:hover {
+        color: black;
+    }
 }
