@@ -1,0 +1,34 @@
+/* Responsive Images CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Queries for responsive design */
+@media screen and (min-width: 768px) {
+    /* Styles for tablets and larger screens */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles for desktops and larger screens */
+}
