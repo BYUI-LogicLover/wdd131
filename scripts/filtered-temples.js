@@ -127,6 +127,7 @@ function displayTemples(templeList) {
   container.appendChild(fragment);
 }
 
+// https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/37368230?start=0#overview
 const FILTER_CONFIG = {
   old: {
     title: 'Old Temples',
