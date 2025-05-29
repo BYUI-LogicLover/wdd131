@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Travis Nelson">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Travis Nelson | Temples">
+    <meta charset="UTF-8">
+    <title>WDD 131 - Dynamic Web Fundamentals - Travis Nelson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css"/>
+    <link rel="stylesheet" href="styles/filtered-temples-large.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg"/>
+</head>
+
+<body>
+<header>
+    <h1>Temple Album</h1>
+    <nav class="navigation">
+        <ul id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+    </nav>
+    <div class="trigram">☰</div>
+    <div class="cross">╳</div>
+</header>
+<main>
+    <h2>Home</h2>
+    <section class="temple-images">
+        <div class="image-container"></div>
+    </section>
+</main>
+<footer>
+    <p>
+        &copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah
+    </p>
+    <p>Last modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
