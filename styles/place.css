@@ -22,13 +22,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 h1 {
     font-family: var(--heading-font), serif;
-    color: var(--primary-color);
+    color: var(--heading-text-color);
+    background-color: var(--primary-color);
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .card {
@@ -96,13 +101,65 @@ footer {
     color: var(--heading-text-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero container and image styling */
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Large screen styles */
+@media (min-width: 1200px) {
+    .hero-container, h1, footer {
+        max-width: 1400px;
+    }
+
+    img.weather-icon {
+        display: none;
+    }
+
+    div.weather-icon::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 8px auto;
+        background-image: url('../images/partly-cloudy.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* Extra large screen styles */
+@media (min-width: 1600px) {
+    .hero-container, h1, footer {
+        max-width: 1800px;
+    }
 }
 
 /* Tablet styles */
 @media (max-width: 768px) {
-    .hero-container {
-        background-size: cover;
-        background-position: center;
+    .hero-container, h1, footer {
+        width: 100%;
+        max-width: 100%;
     }
 
     .card {
@@ -123,9 +180,10 @@ footer {
 
 /* Mobile styles */
 @media (max-width: 480px) {
-    .hero-container {
-        background-size: cover;
-        background-position: center;
+    .hero-container, h1, footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
     }
 
     .card {
@@ -143,8 +201,8 @@ footer {
     }
 
     .weather-icon {
-        font-size: 36px;
-        margin: 12px 0;
+        width: 50px;
+        height: 50px;
     }
 
     footer {

@@ -23,7 +23,7 @@
     <h1>Utah</h1>
 </header>
 <main>
-    <div>
+    <div class="hero-container">
         <picture class="hero-image">
             <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
             <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
@@ -68,10 +68,10 @@
       <!-- Bottom right card - Weather data -->
       <div class="card bottom-right">
         <h2>Salt Lake City, Utah</h2>
-        <div class="weather-icon">☀️</div>
+        <div class="weather-icon"><img class="weather-icon" src="images/partly-cloudy.svg" alt="Weather Icon"></div>
         <div class="info-row">
           <span class="label">Current:</span>
-          <span class="value">72&deg;F</span>
+          <span class="value">64&deg;F</span>
         </div>
         <div class="info-row">
           <span class="label">Condition:</span>
@@ -79,11 +79,11 @@
         </div>
         <div class="info-row">
           <span class="label">Wind:</span>
-          <span class="value">10 mph</span>
+          <span class="value">15 mph</span>
         </div>
         <div class="info-row">
           <span class="label">Wind Chill:</span>
-          <span class="value">0&deg;F</span>
+          <span class="value" id="windchill">&deg;F</span>
         </div>
       </div>
     </div>
