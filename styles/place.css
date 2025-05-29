@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #194d6e;
+    --secondary-color: #070308;
+    --accent1-color: #dee5e7;
+    --accent2-color: #73e878;
+    --heading-text-color: white;
+    --heading-font: Roboto, Helvetica, sans-serif;
+    --text-font: Montserrat, Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font), serif;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: var(--text-font), serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: var(--heading-font), serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-width: 280px;
+}
+
+.card h2 {
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    font-size: 24px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 8px;
+}
+
+.top-left {
+    top: 100px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 600;
+    color: #666;
+}
+
+.value {
+    color: #333;
+}
+
+.weather-icon {
+    font-size: 48px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font), serif;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+    padding-top: 20px;
+    color: var(--heading-text-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .hero-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card {
+        position: relative;
+        margin: 20px;
+        min-width: auto;
+    }
+
+    .top-left,
+    .bottom-right {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .hero-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card {
+        min-width: auto;
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .info-row {
+        font-size: 14px;
+    }
+
+    .weather-icon {
+        font-size: 36px;
+        margin: 12px 0;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

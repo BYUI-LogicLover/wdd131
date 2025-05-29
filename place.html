@@ -1,28 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Travis Nelson">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Place">
     <title>WDD 131 - Dynamic Web Fundamentals - Travis Nelson</title>
-    <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg"/>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/place.js" defer></script>
 </head>
-<body>
-<main>
-    <header>
 
-    </header>
+<body>
+<header>
+    <h1>Utah</h1>
+</header>
+<main>
+    <div>
+        <picture class="hero-image">
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="Utah" title="Utah">
+        </picture>
+      <div class="card top-left">
+        <h2>Data</h2>
+        <div class="info-row">
+          <span class="label">Area:</span>
+          <span class="value">26,472,540 sq mi</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Population:</span>
+          <span class="value">~33 million</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Capital:</span>
+          <span class="value">Salt Lake City</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Language:</span>
+          <span class="value">English</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Currency:</span>
+          <span class="value">US Dollar (USD)</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Time Zone:</span>
+          <span class="value">Mountain</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Calling Code:</span>
+          <span class="value">801, 435, 385</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Internet TLD:</span>
+          <span class="value">.us</span>
+        </div>
+      </div>
+
+      <!-- Bottom right card - Weather data -->
+      <div class="card bottom-right">
+        <h2>Salt Lake City, Utah</h2>
+        <div class="weather-icon">☀️</div>
+        <div class="info-row">
+          <span class="label">Current:</span>
+          <span class="value">72&deg;F</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Condition:</span>
+          <span class="value">Partly Cloudy</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Wind:</span>
+          <span class="value">10 mph</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Wind Chill:</span>
+          <span class="value">0&deg;F</span>
+        </div>
+      </div>
+    </div>
 </main>
 <footer>
     <p>&copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah</p>
-    <p>Last modified: <span id="lastModified"></span></p>
+    <p>Last modification: <span id="lastModified"></span></p>
 </footer>
 </body>
+
 </html>
