@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Travis Nelson">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Travis Nelson | Product Review Form">
+  <title>WDD 131 - Dynamic Web Fundamentals - Travis Nelson</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+<header>
+  <h1>Product Review Form</h1>
+</header>
+<main>
+  <form id="productReviewForm" method="get" action="review.html">
+    <label for="productName">Product Name</label>
+    <select name="productName" id="productName" required>
+      <option value="" disabled selected>Select a product...</option>
+    </select>
+    <label for="fivestar">Product Rating</label>
+    <div class="stars">
+      <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+      <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+      <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+      <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+      <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+    </div>
+    <label for="installDate">Date of Installation</label>
+    <input type="date" id="installDate" name="installDate" required>
+    <div class="product-features">
+      <h3>Which features did you find useful in the product? (Check all that apply)</h3>
+      <div class="checkbox-group">
+        <input type="checkbox" id="durability" name="durability" value="durability">
+        <label for="durability">Durability</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="eastOfUse" name="eastOfUse" value="eastOfUse">
+        <label for="eastOfUse">Ease of Use</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="performance" name="performance" value="performance">
+        <label for="performance">Performance</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="design" name="design" value="design">
+        <label for="design">Design</label>
+      </div>
+    </div>
+    <label for="reviewText">Written Review (Optional)</label>
+    <textarea id="reviewText" name="reviewText" rows="5" cols="30" placeholder="Write your review here..." required></textarea>
+    <label for="yourName">Your Name (Optional)</label>
+    <input type="text" id="yourName" name="yourName">
+    <input type="submit" value="Post Review">
+  </form>
+</main>
+<footer>
+  <p>&copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah</p>
+  <p>Last modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+
+</html>
