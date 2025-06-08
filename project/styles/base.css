@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #423629;
-    --secondary-color: #4F5D2F;
-    --accent1-color: #7D7E75;
-    --accent2-color: #B0B2B8;
+    --primary-color: #244260;
+    --secondary-color: #FF9900;
+    --accent1-color: #dbe1e3;
+    --accent2-color: #daefd6;
+    --accent3-color: #fbe8a8;
     --heading-text-color: white;
     --heading-font: Roboto, Helvetica, sans-serif;
     --text-font: Montserrat, Helvetica, sans-serif;
@@ -14,6 +15,40 @@ body {
     max-width: 1500px;
     margin: 0 auto;
     align-content: center;
+}
+
+#page-header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: var(--primary-color);
+}
+
+#page-header img {
+    width: 250px;
+    height: auto;
+}
+
+#page-header p {
+    margin: 0;
+    font-size: 4.2rem;
+    font-family: var(--heading-font), serif;
+    color: var(--heading-text-color);
+}
+
+section p {
+    font-family: var(--text-font), sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+section li {
+    font-family: var(--text-font), sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    padding-left: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', 'Roboto', sans-serif; }
