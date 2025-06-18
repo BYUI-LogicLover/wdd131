@@ -281,7 +281,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: blue;
     box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
 }
 
@@ -368,7 +368,7 @@ body {
 }
 
 .breadcrumb a {
-    color: var(--primary-color);
+    color: blue;
     text-decoration: none;
 }
 
@@ -503,7 +503,7 @@ body {
     margin-top: 0.5rem;
 }
 
-.positive { color: #28a745; }
+.positive { color: black; }
 .neutral { color: #6c757d; }
 
 .card {
@@ -622,6 +622,7 @@ body {
 .score-good { background: #d4edda; color: #155724; }
 .score-ok { background: #fff3cd; color: #856404; }
 .score-poor { background: #f8d7da; color: #721c24; }
+.score-pending { background: #e2e3e5; color: #383d41; }
 
 .quick-actions {
     grid-column: 1 / -1;
@@ -643,7 +644,7 @@ body {
 
 .btn-primary {
     background: #ff9a00;
-    color: white;
+    color: black;
 }
 
 .btn-primary:hover {
